@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width" , initial-scale="1.0">
     <title>Matomo Tag Manager Test</title>
     <script type="application/javascript" src="https://app.usercentrics.eu/latest/main.js" id="g8cKMII-p"></script>
+    <!-- Matomo -->
+    <script type="text/javascript">
+        var _paq = window._paq = window._paq || [];
+        /* tracker methods like "setCustomDimension" should be called before "trackPageView" */
+        _paq.push(['trackPageView']);
+        _paq.push(['enableLinkTracking']);
+        (function () {
+            var u = "https://uctestpage.matomo.cloud/";
+            _paq.push(['setTrackerUrl', u + 'matomo.php']);
+            _paq.push(['setSiteId', '1']);
+            var d = document, g = d.createElement('script'), s = d.getElementsByTagName('script')[0];
+            g.type = 'text/javascript'; g.async = true; g.src = '//cdn.matomo.cloud/uctestpage.matomo.cloud/matomo.js'; s.parentNode.insertBefore(g, s);
+        })();
+    </script>
+    <!-- End Matomo Code -->
+
     <script>
         var _mtm = _mtm || [];
         _mtm.push({ "consentInitialized": "consents_initialized" });
